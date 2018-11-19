@@ -20,7 +20,7 @@ class App < Sinatra::Base
       @team_members.each do |member|
         @hero_name << member[:name]
         @hero_power << member[:power]
-        @hero_bio << member[:biography]
+        @hero_bio << member[:bio]
       end
 
       erb :team
